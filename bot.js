@@ -3,7 +3,7 @@ const axios = require('axios');
 const fs = require('fs');
 
 // Ganti token dan UptimeRobot API key kamu
-const TELEGRAM_TOKEN = '7977951208:AAHXE59QVFC1mH5-uWXizNaCQV9SIz6UI8Y';
+const TELEGRAM_TOKEN = '7571476467:AAFV20bwjEKMdeNW5rn42Kob7BGXFYROSqs';
 const UPTIME_API_KEY = 'u2920329-bb061326d3e862c47bdd0418';
 
 const bot = new TelegramBot(TELEGRAM_TOKEN, { polling: true });
