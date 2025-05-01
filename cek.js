@@ -4,7 +4,7 @@ const path = require('path');
 const axios = require('axios');
 
 // Environment variables or config
-const BOT_TOKEN = process.env.BOT_TOKEN || '7640956324:AAGyRuhXb8bi8wuHwSEOAFOaxyA-L45p7aw';
+const BOT_TOKEN = process.env.BOT_TOKEN || '8067806385:AAE2vZyWO_S9TaQ8hLlmylH8oRlToH9TPuc';
 const AUTHORIZED_USERS = process.env.AUTHORIZED_USERS ? process.env.AUTHORIZED_USERS.split(',') : ['6456655262'];
 const CHECK_INTERVAL = 1000; // 5 seconds
 
