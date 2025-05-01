@@ -19,7 +19,13 @@
   },
   "adonis-kingdom": {
   "max_time": 60,
-  "cooldown": 22,
+  "cooldown": 100,
+  "concurrent": 1,
+  "expiry_days": 30
+  },
+  "sui": {
+  "max_time": 60,
+  "cooldown": 80,
   "concurrent": 1,
   "expiry_days": 30
   },
