@@ -1,0 +1,32 @@
+{
+  "vzz4you": {
+    "max_time": 60,
+    "cooldown": 60,
+    "concurrent": 1,
+    "expiry_days": 30
+  },
+  "JesusIsKing": {
+  "max_time": 60,
+  "cooldown": 60,
+  "concurrent": 1,
+  "expiry_days": 30
+  },
+  "tanjiro-uivIVobof6N": {
+  "max_time": 60,
+  "cooldown": 80,
+  "concurrent": 1,
+  "expiry_days": 30
+  },
+  "adonis-kingdom": {
+  "max_time": 60,
+  "cooldown": 22,
+  "concurrent": 1,
+  "expiry_days": 30
+  },
+  "isalmods": {
+    "max_time": 1000,
+    "cooldown": 30,
+    "concurrent": 2,
+    "expiry_days": 30
+  }
+}

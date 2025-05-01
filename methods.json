@@ -1,0 +1,7 @@
+{
+    "http": "node mix.js {host} {time} 1 1",
+    "raw": "node HTTP-RAW.js {host} {time}",
+    "browser": "node tornado GET {host} {time} 1 1 proxy.txt",
+    "udp": "./udp {host} {port} {time}",
+    "tcp": "./tcp {host} {port} {time}"
+}
