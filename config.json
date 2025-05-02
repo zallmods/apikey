@@ -1,31 +1,13 @@
 {
-  "vzz4you": {
+  "dispenser": {
     "max_time": 60,
-    "cooldown": 60,
+    "cooldown": 100,
     "concurrent": 1,
     "expiry_days": 30
   },
-  "JesusIsKing": {
-  "max_time": 60,
-  "cooldown": 60,
-  "concurrent": 1,
-  "expiry_days": 30
-  },
-  "tanjiro-uivIVobof6N": {
-  "max_time": 60,
-  "cooldown": 80,
-  "concurrent": 1,
-  "expiry_days": 30
-  },
-  "adonis-kingdom": {
-  "max_time": 60,
-  "cooldown": 100,
-  "concurrent": 1,
-  "expiry_days": 30
-  },
   "sui": {
   "max_time": 60,
-  "cooldown": 80,
+  "cooldown": 100,
   "concurrent": 1,
   "expiry_days": 30
   },
