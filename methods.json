@@ -3,5 +3,6 @@
     "raw": "node HTTP-RAW.js {host} {time}",
     "browser": "node tornado GET {host} {time} 1 1 proxy.txt",
     "udp": "./udp {host} {port} {time}",
+    "spike": "node tcpjs.js {host} {port} 1 {time}",
     "tcp": "./tcp {host} {port} {time}"
 }
