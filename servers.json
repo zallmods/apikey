@@ -38,5 +38,53 @@
     {
         "name": "api-67030087",
         "host": "https://8080-idx-api-1746110472185.cluster-44kx2eiocbhe2tyk3zoyo3ryuo.cloudworkstations.dev"
+    },
+    {
+        "name": "api-63120617",
+        "host": "https://8080-idx-api-1746121285240.cluster-xpmcxs2fjnhg6xvn446ubtgpio.cloudworkstations.dev"
+    },
+    {
+        "name": "api-23580103",
+        "host": "https://8080-idx-api-1746121287335.cluster-xpmcxs2fjnhg6xvn446ubtgpio.cloudworkstations.dev"
+    },
+    {
+        "name": "api-00301634",
+        "host": "https://8080-idx-api-1746121250295.cluster-sumfw3zmzzhzkx4mpvz3ogth4y.cloudworkstations.dev"
+    },
+    {
+        "name": "api-79411963",
+        "host": "https://8080-idx-api-1746121227925.cluster-73qgvk7hjjadkrjeyexca5ivva.cloudworkstations.dev"
+    },
+    {
+        "name": "api-52466274",
+        "host": "https://8080-idx-api-1746121606812.cluster-iktsryn7xnhpexlu6255bftka4.cloudworkstations.dev"
+    },
+    {
+        "name": "api-97391246",
+        "host": "https://8080-idx-api-1746121979255.cluster-iktsryn7xnhpexlu6255bftka4.cloudworkstations.dev"
+    },
+    {
+        "name": "api-18425879",
+        "host": "https://8080-idx-api-1746122086878.cluster-nzwlpk54dvagsxetkvxzbvslyi.cloudworkstations.dev"
+    },
+    {
+        "name": "api-37248123",
+        "host": "https://8080-idx-api-1746122180398.cluster-73qgvk7hjjadkrjeyexca5ivva.cloudworkstations.dev"
+    },
+    {
+        "name": "api-79462672",
+        "host": "https://8080-idx-api-1746121289587.cluster-zumahodzirciuujpqvsniawo3o.cloudworkstations.dev"
+    },
+    {
+        "name": "api-52319706",
+        "host": "https://8080-idx-api-1746121248230.cluster-htdgsbmflbdmov5xrjithceibm.cloudworkstations.dev"
+    },
+    {
+        "name": "api-69969489",
+        "host": "https://8080-idx-api-1746123881068.cluster-isls3qj2gbd5qs4jkjqvhahfv6.cloudworkstations.dev"
+    },
+    {
+        "name": "api-60750131",
+        "host": "https://8080-idx-api-1746123788245.cluster-bg6uurscprhn6qxr6xwtrhvkf6.cloudworkstations.dev"
     }
 ]
