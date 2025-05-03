@@ -1,5 +1,0 @@
-[
-  { "name": "udp", "description": "UDP flood method" },
-  { "name": "http", "description": "HTTP flood method" },
-  { "name": "tornado", "description": "tornado flood method" }
-]
