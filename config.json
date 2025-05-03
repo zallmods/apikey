@@ -11,6 +11,12 @@
   "concurrent": 1,
   "expiry_days": 30
   },
+  "syafrial": {
+  "max_time": 60,
+  "cooldown": 100,
+  "concurrent": 1,
+  "expiry_days": 30
+  },
   "isalmods": {
     "max_time": 1000,
     "cooldown": 30,
