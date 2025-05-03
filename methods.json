@@ -1,5 +1,5 @@
 {
     "http": "node mix.js {host} {time} 1 1",
     "flood": "node flooooo.js {host} {time} 1 1 proxy.txt",
-    "udp": "./udp {host} {port} {time}",
+    "udp": "./udp {host} {port} {time}"
 }
