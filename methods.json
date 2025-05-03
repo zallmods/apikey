@@ -1,6 +1,7 @@
 {
     "http": "node mix.js {host} {time} 1 1",
     "raw": "node HTTP-RAW.js {host} {time}",
+    "raw": "node h1-syafrial.js {host} {time} 1 proxy.txt 1 --delay",
     "browser": "node tornado GET {host} {time} 1 1 proxy.txt",
     "udp": "./udp {host} {port} {time}",
     "spike": "node tcpjs.js {host} {port} 1 {time}",
