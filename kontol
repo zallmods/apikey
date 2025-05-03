@@ -6,15 +6,8 @@ const indexProcess = spawn('node', ['bot'], { stdio: 'inherit' });
 // Jalankan 'node cek'
 const cekProcess = spawn('node', ['cek'], { stdio: 'inherit' });
 
-// Jalankan 'node tele'
-const teleProcess = spawn('node', ['tele'], { stdio: 'inherit' });
-
 // Jalankan 'node bot'
 const botProcess = spawn('node', ['index'], { stdio: 'inherit' });
-
-teleProcess.on('close', (code) => {
-  console.log(`tele exited with code ${code}`);
-});
 
 cekProcess.on('close', (code) => {
   console.log(`cekjs exited with code ${code}`);
