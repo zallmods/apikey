@@ -1,5 +1,6 @@
 {
     "http": "node mix.js {host} {time} 8 64",
     "tornado": "node tornado.js GET {host} {time} 8 128 proxy.txt",
+    "xran-bypass": "node xran-bypass.js {host} {time} 8 5 proxy.txt",
     "udp": "./udp {host} {port} {time}"
 }
