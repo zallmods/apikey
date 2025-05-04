@@ -239,46 +239,6 @@
         "name": "api-41762726",
         "host": "https://8080-idx-api-1746162801477.cluster-iktsryn7xnhpexlu6255bftka4.cloudworkstations.dev"
     },
-        {
-        "name": "api-89222981",
-        "host": "https://8080-idx-api-1746111745792.cluster-6dx7corvpngoivimwvvljgokdw.cloudworkstations.dev"
-    },
-    {
-        "name": "api-58024286",
-        "host": "https://8080-idx-api-1746110458115.cluster-ikxjzjhlifcwuroomfkjrx437g.cloudworkstations.dev"
-    },
-    {
-        "name": "api-12789035",
-        "host": "https://8080-idx-api-1746110748567.cluster-nzwlpk54dvagsxetkvxzbvslyi.cloudworkstations.dev"
-    },
-    {
-        "name": "api-70252852",
-        "host": "https://8080-idx-api-1746110419667.cluster-ancjwrkgr5dvux4qug5rbzyc2y.cloudworkstations.dev"
-    },
-    {
-        "name": "api-93786169",
-        "host": "https://8080-idx-api-1746110421768.cluster-44kx2eiocbhe2tyk3zoyo3ryuo.cloudworkstations.dev"
-    },
-    {
-        "name": "api-54666740",
-        "host": "https://8080-idx-api-1746111937556.cluster-bg6uurscprhn6qxr6xwtrhvkf6.cloudworkstations.dev"
-    },
-    {
-        "name": "api-67030087",
-        "host": "https://8080-idx-api-1746110472185.cluster-44kx2eiocbhe2tyk3zoyo3ryuo.cloudworkstations.dev"
-    },
-    {
-        "name": "api-55553223",
-        "host": "https://8080-idx-api-1746110454704.cluster-zumahodzirciuujpqvsniawo3o.cloudworkstations.dev"
-    },
-    {
-        "name": "api-19227433",
-        "host": "https://8080-idx-api-1746110460285.cluster-6dx7corvpngoivimwvvljgokdw.cloudworkstations.dev"
-    },
-    {
-        "name": "api-07897084",
-        "host": "https://8080-idx-api-1746110423485.cluster-htdgsbmflbdmov5xrjithceibm.cloudworkstations.dev"
-    },
     {
         "name": "api-84237690",
         "host": "https://8080-idx-api-1746317458666.cluster-isls3qj2gbd5qs4jkjqvhahfv6.cloudworkstations.dev"
@@ -300,10 +260,6 @@
         "host": "https://8080-idx-api-1746317474910.cluster-zumahodzirciuujpqvsniawo3o.cloudworkstations.dev"
     },
     {
-        "name": "api-84237690",
-        "host": "https://8080-idx-api-1746317458666.cluster-isls3qj2gbd5qs4jkjqvhahfv6.cloudworkstations.dev"
-    },
-    {
         "name": "api-62378396",
         "host": "https://8080-idx-api-1746318029485.cluster-sumfw3zmzzhzkx4mpvz3ogth4y.cloudworkstations.dev"
     },
@@ -318,46 +274,6 @@
     {
         "name": "api-77793970",
         "host": "https://8080-idx-api-1746318405050.cluster-ancjwrkgr5dvux4qug5rbzyc2y.cloudworkstations.dev"
-    },
-    {
-        "name": "api-37001797",
-        "host": "https://8080-idx-api-1746323893325.cluster-73qgvk7hjjadkrjeyexca5ivva.cloudworkstations.dev"
-    },
-    {
-        "name": "api-23358815",
-        "host": "https://8080-idx-api-1746323899132.cluster-zumahodzirciuujpqvsniawo3o.cloudworkstations.dev"
-    },
-    {
-        "name": "api-27952790",
-        "host": "https://8080-idx-api-1746324193391.cluster-isls3qj2gbd5qs4jkjqvhahfv6.cloudworkstations.dev"
-    },
-    {
-        "name": "api-39314487",
-        "host": "https://8080-idx-api-1746324284699.cluster-ancjwrkgr5dvux4qug5rbzyc2y.cloudworkstations.dev"
-    },
-    {
-        "name": "api-53881863",
-        "host": "https://8080-idx-api-1746323865942.cluster-xpmcxs2fjnhg6xvn446ubtgpio.cloudworkstations.dev"
-    },
-    {
-        "name": "api-99522460",
-        "host": "https://8080-idx-api-1746323845717.cluster-xpmcxs2fjnhg6xvn446ubtgpio.cloudworkstations.dev"
-    },
-    {
-        "name": "api-26027972",
-        "host": "https://8080-idx-api-1746323851191.cluster-nzwlpk54dvagsxetkvxzbvslyi.cloudworkstations.dev"
-    },
-    {
-        "name": "api-83278911",
-        "host": "https://8080-idx-api-1746323884751.cluster-htdgsbmflbdmov5xrjithceibm.cloudworkstations.dev"
-    },
-    {
-        "name": "api-46854758",
-        "host": "https://8080-idx-api-1746324561808.cluster-sumfw3zmzzhzkx4mpvz3ogth4y.cloudworkstations.dev"
-    },
-    {
-        "name": "api-93735459",
-        "host": "https://8080-idx-api-1746324669317.cluster-w5vd22whf5gmav2vgkomwtc4go.cloudworkstations.dev"
     },
     {
         "name": "api-37001797",
@@ -438,5 +354,5 @@
     {
         "name": "api-05762069",
         "host": "https://8080-idx-api-1746325690963.cluster-sumfw3zmzzhzkx4mpvz3ogth4y.cloudworkstations.dev"
-    }    
+    }
 ]
