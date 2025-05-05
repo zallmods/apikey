@@ -3,8 +3,14 @@ const { spawn } = require('child_process');
 // Jalankan 'node index'
 const indexProcess = spawn('node', ['bot'], { stdio: 'inherit' });
 
+// Jalankan 'node index2'
+const index2Process = spawn('node', ['index2'], { stdio: 'inherit' });
+
 // Jalankan 'node cek'
 const cekProcess = spawn('node', ['cek'], { stdio: 'inherit' });
+
+// Jalankan 'node cok'
+const cokProcess = spawn('node', ['cok'], { stdio: 'inherit' });
 
 // Jalankan 'node bot'
 const botProcess = spawn('node', ['index'], { stdio: 'inherit' });
@@ -20,4 +26,12 @@ indexProcess.on('close', (code) => {
 
 botProcess.on('close', (code) => {
   console.log(`bot.js exited with code ${code}`);
+});
+
+cokProcess.on('close', (code) => {
+  console.log(`cok.js exited with code ${code}`);
+});
+
+index2Process.on('close', (code) => {
+  console.log(`index2.js exited with code ${code}`);
 });
