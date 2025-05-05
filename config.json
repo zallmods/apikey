@@ -11,6 +11,12 @@
   "concurrent": 1,
   "expiry_days": 30
   },
+  "adonis": {
+  "max_time": 60,
+  "cooldown": 60,
+  "concurrent": 1,
+  "expiry_days": 30
+  },
   "syafrial": {
   "max_time": 60,
   "cooldown": 100,
