@@ -2,13 +2,13 @@ const express = require('express');
 const axios = require('axios');
 const fs = require('fs');
 const app = express();
-const PORT = process.env.PORT || 6666;
+const PORT = process.env.PORT || 21743;
 
 // Load data
-const methods = require('./methods2.json');
-const servers = require('./servers2.json');
-const keys = require('./key2.json');
-const config = require('./config2.json');
+const methods = require('./methods.json');
+const servers = require('./servers.json');
+const keys = require('./key.json');
+const config = require('./config.json');
 
 let cooldownData = {};
 let attackLog = [];
