@@ -13,7 +13,6 @@ const config = require('./config.json');
 let cooldownData = {};
 let attackLog = [];
 let activeAttacks = {}; // Untuk tracking concurrent per token
-let scheduledCooldowns = {}; // Track scheduled cooldowns
 
 // Load cooldown.json jika ada
 if (fs.existsSync('./cooldown.json')) {
@@ -91,13 +90,13 @@ app.get('/api/attack', async (req, res) => {
         });
     }
 
-    // Hanya larang 80/443 kalau method adalah UDP
-    if (method.toLowerCase() === 'udp' && (port === '80' || port === '443')) {
-        return res.status(400).json({
-            status: 'error',
-            message: 'Port 80 and 443 are not allowed for UDP method'
-        });
-    }
+// Hanya larang 80/443 kalau method adalah UDP
+if (method.toLowerCase() === 'udp' && (port === '80' || port === '443')) {
+    return res.status(400).json({
+        status: 'error',
+        message: 'Port 80 and 443 are not allowed for UDP method'
+    });
+}
 
     // Cek concurrent limit
     if (activeAttacks[token] >= userConfig.concurrent) {
@@ -142,7 +141,10 @@ app.get('/api/attack', async (req, res) => {
                 .catch(() => {}); // kalau error, cuekin aja
         });
 
-        // Log the attack in attackLog
+        // Langsung simpan data
+        cooldownData[token].last_attack = new Date().toISOString();
+        saveCooldown();
+
         attackLog.push({
             token,
             target,
@@ -154,21 +156,6 @@ app.get('/api/attack', async (req, res) => {
         });
         saveAttackLog();
 
-        // Schedule the cooldown to be applied after the attack completes
-        const attackDurationMs = parseInt(time) * 1000;
-        
-        // Clear any existing scheduled cooldown for this token
-        if (scheduledCooldowns[token]) {
-            clearTimeout(scheduledCooldowns[token]);
-        }
-        
-        // Set a new scheduled cooldown
-        scheduledCooldowns[token] = setTimeout(() => {
-            cooldownData[token].last_attack = new Date().toISOString();
-            saveCooldown();
-            delete scheduledCooldowns[token];
-        }, attackDurationMs);
-
         // Langsung kirim response ke user
         res.json({
             status: 'success',
@@ -178,8 +165,7 @@ app.get('/api/attack', async (req, res) => {
                 port: port || null,
                 duration: parseInt(time),
                 method: method,
-                timeLeft: parseInt(time),
-                cooldownStarts: 'after attack completes'
+                timeLeft: parseInt(time)
             }
         });
 
@@ -189,64 +175,15 @@ app.get('/api/attack', async (req, res) => {
             message: error.message
         });
     } finally {
-        // Reduce active attacks counter after the attack duration
-        setTimeout(() => {
-            if (activeAttacks[token] > 0) {
-                activeAttacks[token]--;
-            }
-        }, parseInt(time) * 1000);
-    }
-});
-
-// New endpoint to check status including cooldown and active attacks
-app.get('/api/status', (req, res) => {
-    const { token } = req.query;
-    
-    if (!token || !keys.includes(token)) {
-        return res.status(403).json({ status: 'error', message: 'Invalid API key' });
-    }
-    
-    const userConfig = config[token];
-    if (!userConfig) {
-        return res.status(403).json({ status: 'error', message: 'No configuration found for this API key' });
-    }
-    
-    ensureCreatedAt(token);
-    
-    const now = Date.now();
-    const lastAttack = new Date(cooldownData[token].last_attack).getTime() || 0;
-    const cooldownMs = userConfig.cooldown * 1000;
-    const elapsed = now - lastAttack;
-    let cooldownStatus = 'inactive';
-    let timeLeft = 0;
-    
-    if (elapsed < cooldownMs) {
-        cooldownStatus = 'active';
-        timeLeft = Math.ceil((cooldownMs - elapsed) / 1000);
-    }
-    
-    res.json({
-        status: 'success',
-        data: {
-            token: token,
-            max_time: userConfig.max_time,
-            cooldown: userConfig.cooldown,
-            concurrent: userConfig.concurrent,
-            current_active_attacks: activeAttacks[token] || 0,
-            cooldown_status: cooldownStatus,
-            cooldown_time_left: timeLeft,
-            expiry_date: new Date(new Date(cooldownData[token].created_at).getTime() + (userConfig.expiry_days * 24 * 60 * 60 * 1000)).toISOString()
+        if (activeAttacks[token] > 0) {
+            activeAttacks[token]--;
         }
-    });
+    }
 });
 
 // Endpoint cek server
 app.get('/', (req, res) => {
-    res.json({ 
-        status: 'online', 
-        usage: '/api/attack?token=...&target=...&time=...&method=...&port=...',
-        status_check: '/api/status?token=...'
-    });
+    res.json({ status: 'online', usage: '/api/attack?token=...&target=...&time=...&method=...&port=...' });
 });
 
 app.listen(PORT, () => {
