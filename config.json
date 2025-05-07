@@ -17,6 +17,12 @@
     "concurrent": 1,
     "expiry_days": 30
   },
+    "repan": {
+    "max_time": 60,
+    "cooldown": 100,
+    "concurrent": 1,
+    "expiry_days": 30
+  },
     "adonis": {
     "max_time": 300,
     "cooldown": 200,
