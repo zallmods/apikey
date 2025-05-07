@@ -1,38 +1,20 @@
 {
-  "dispenser": {
-    "max_time": 60,
-    "cooldown": 100,
+  "vzz4you": {
+    "max_time": 200,
+    "cooldown": 60,
     "concurrent": 1,
     "expiry_days": 30
   },
-  "sui": {
+  "JesusIsKing": {
   "max_time": 60,
-  "cooldown": 100,
-  "concurrent": 1,
-  "expiry_days": 30
-  },
-  "adonis": {
-  "max_time": 300,
   "cooldown": 60,
   "concurrent": 1,
   "expiry_days": 30
   },
-  "syafrial": {
-  "max_time": 60,
-  "cooldown": 100,
-  "concurrent": 1,
-  "expiry_days": 30
-  },
- "renc": {
-  "max_time": 60,
-  "cooldown": 100,
-  "concurrent": 1,
-  "expiry_days": 30
-  },
-  "isalmods": {
+  "isalganteng": {
     "max_time": 1000,
     "cooldown": 30,
-    "concurrent": 2,
+    "concurrent": 1,
     "expiry_days": 30
   }
 }
