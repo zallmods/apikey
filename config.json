@@ -5,6 +5,12 @@
     "concurrent": 1,
     "expiry_days": 30
   },
+  "dispenser": {
+    "max_time": 60,
+    "cooldown": 99,
+    "concurrent": 1,
+    "expiry_days": 30
+  },
   "isalganteng": {
     "max_time": 1000,
     "cooldown": 30,
