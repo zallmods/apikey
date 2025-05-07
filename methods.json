@@ -9,7 +9,6 @@
     "bypass": "node bypass.js {host} {time} 1 1 proxy.txt",
     "browser": "node tornado GET {host} {time} 1 1 proxy.txt",
     "udp": "./udp {host} {port} {time}",
-    "udphex": "./udphex {host} {port} 1 {time}",
     "mcbot": "node StarsXMc.js {host} {port} {time}",
     "tcp": "node StarsXSamp.js {host} {port} {time}"
 }
