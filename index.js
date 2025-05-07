@@ -13,11 +13,11 @@ const config = require('./config.json');
 const servers = [
     {
         "name": "api-51432652",
-        "host": "https://8080-idx-api-1746546981986.cluster-bg6uurscprhn6qxr6xwtrhvkf6.cloudworkstations.dev"
+        "host": ""
     },
     {
         "name": "api-57373786",
-        "host": "https://8080-idx-api-1746547113137.cluster-sumfw3zmzzhzkx4mpvz3ogth4y.cloudworkstations.dev"
+        "host": ""
     }
 ];
 
