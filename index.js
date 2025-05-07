@@ -12,12 +12,44 @@ const config = require('./config.json');
 // Define servers directly in the code instead of loading from servers.json
 const servers = [
     {
-        "name": "api-51432652",
-        "host": ""
+        "name": "appi-40987091",
+        "host": "https://8080-firebase-appi-1746605949907.cluster-bg6uurscprhn6qxr6xwtrhvkf6.cloudworkstations.dev"
     },
     {
-        "name": "api-57373786",
-        "host": ""
+        "name": "api-59257225",
+        "host": "https://8080-firebase-api-1746605942412.cluster-nzwlpk54dvagsxetkvxzbvslyi.cloudworkstations.dev"
+    },
+    {
+        "name": "api-10110688",
+        "host": "https://8080-firebase-api-1746605947701.cluster-ikxjzjhlifcwuroomfkjrx437g.cloudworkstations.dev"
+    },
+    {
+        "name": "api-47386061",
+        "host": "https://8080-firebase-api-1746606061764.cluster-fdkw7vjj7bgguspe3fbbc25tra.cloudworkstations.dev"
+    },
+    {
+        "name": "api-14407949",
+        "host": "https://8080-firebase-api-1746606063966.cluster-isls3qj2gbd5qs4jkjqvhahfv6.cloudworkstations.dev"
+    },
+    {
+        "name": "api-08696406",
+        "host": "https://8080-firebase-api-1746606068022.cluster-w5vd22whf5gmav2vgkomwtc4go.cloudworkstations.dev"
+    },
+    {
+        "name": "api-48194206",
+        "host": "https://8080-firebase-api-1746606355443.cluster-sumfw3zmzzhzkx4mpvz3ogth4y.cloudworkstations.dev"
+    },
+    {
+        "name": "api-97669077",
+        "host": "https://8080-firebase-api-1746606946425.cluster-xpmcxs2fjnhg6xvn446ubtgpio.cloudworkstations.dev"
+    },
+    {
+        "name": "api-60387934",
+        "host": "https://8080-firebase-api-1746607234381.cluster-iktsryn7xnhpexlu6255bftka4.cloudworkstations.dev"
+    },
+    {
+        "name": "api-00452830",
+        "host": "https://8080-firebase-api-1746608237913.cluster-isls3qj2gbd5qs4jkjqvhahfv6.cloudworkstations.dev"
     }
 ];
 
