@@ -12,84 +12,44 @@ const config = require('./config.json');
 // Define servers directly in the code instead of loading from servers.json
 const servers = [
     {
-        "name": "api-36289199",
-        "host": "https://8080-firebase-api-1746709432753.cluster-zkm2jrwbnbd4awuedc2alqxrpk.cloudworkstations.dev"
+        "name": "api-95784075",
+        "host": "https://8080-firebase-api-1746723351322.cluster-xpmcxs2fjnhg6xvn446ubtgpio.cloudworkstations.dev"
     },
     {
-        "name": "spi-54890492",
-        "host": "https://8080-firebase-spi-1746709424072.cluster-44kx2eiocbhe2tyk3zoyo3ryuo.cloudworkstations.dev"
+        "name": "api-04541006",
+        "host": "https://8080-firebase-api-1746723112039.cluster-iktsryn7xnhpexlu6255bftka4.cloudworkstations.dev"
     },
     {
-        "name": "api-16262241",
-        "host": "https://8080-firebase-api-1746711560161.cluster-ys234awlzbhwoxmkkse6qo3fz6.cloudworkstations.dev"
+        "name": "api-27093185",
+        "host": "https://8080-firebase-api-1746723083795.cluster-ancjwrkgr5dvux4qug5rbzyc2y.cloudworkstations.dev"
     },
     {
-        "name": "api-20815638",
-        "host": "https://8080-firebase-api-1746709397853.cluster-nzwlpk54dvagsxetkvxzbvslyi.cloudworkstations.dev"
+        "name": "api-47118974",
+        "host": "https://8080-firebase-api-1746723088274.cluster-ejd22kqny5htuv5dfowoyipt52.cloudworkstations.dev"
     },
     {
-        "name": "api-50844580",
-        "host": "https://8080-firebase-api-1746710932884.cluster-44kx2eiocbhe2tyk3zoyo3ryuo.cloudworkstations.dev"
+        "name": "api-24895847",
+        "host": "https://8080-firebase-api-1746723064484.cluster-xpmcxs2fjnhg6xvn446ubtgpio.cloudworkstations.dev"
     },
     {
-        "name": "api-38833005",
-        "host": "https://8080-firebase-api-1746709444163.cluster-xpmcxs2fjnhg6xvn446ubtgpio.cloudworkstations.dev"
+        "name": "api-84233216",
+        "host": "https://8080-firebase-api-1746723704104.cluster-44kx2eiocbhe2tyk3zoyo3ryuo.cloudworkstations.dev"
     },
     {
-        "name": "api-88548660",
-        "host": "https://8080-firebase-api-1746709408336.cluster-73qgvk7hjjadkrjeyexca5ivva.cloudworkstations.dev"
+        "name": "api-79644678",
+        "host": "https://8080-firebase-api-1746723796438.cluster-iktsryn7xnhpexlu6255bftka4.cloudworkstations.dev"
     },
     {
-        "name": "api-36319877",
-        "host": "https://8080-firebase-api-1746709403555.cluster-zumahodzirciuujpqvsniawo3o.cloudworkstations.dev"
+        "name": "api-71470392",
+        "host": "https://8080-firebase-api-1746723997508.cluster-73qgvk7hjjadkrjeyexca5ivva.cloudworkstations.dev"
     },
     {
-        "name": "api-01757261",
-        "host": "https://8080-firebase-api-1746710623147.cluster-xpmcxs2fjnhg6xvn446ubtgpio.cloudworkstations.dev"
+        "name": "api-14654965",
+        "host": "https://8080-firebase-api-1746724130607.cluster-ubrd2huk7jh6otbgyei4h62ope.cloudworkstations.dev"
     },
     {
-        "name": "idx-55764981",
-        "host": "https://8080-firebase-idx-1746710347156.cluster-fkltigo73ncaixtmokrzxhwsfc.cloudworkstations.dev"
-    },
-    {
-        "name": "appi-40987091",
-        "host": "https://8080-firebase-appi-1746605949907.cluster-bg6uurscprhn6qxr6xwtrhvkf6.cloudworkstations.dev"
-    },
-    {
-        "name": "api-59257225",
-        "host": "https://8080-firebase-api-1746605942412.cluster-nzwlpk54dvagsxetkvxzbvslyi.cloudworkstations.dev"
-    },
-    {
-        "name": "api-10110688",
-        "host": "https://8080-firebase-api-1746605947701.cluster-ikxjzjhlifcwuroomfkjrx437g.cloudworkstations.dev"
-    },
-    {
-        "name": "api-47386061",
-        "host": "https://8080-firebase-api-1746606061764.cluster-fdkw7vjj7bgguspe3fbbc25tra.cloudworkstations.dev"
-    },
-    {
-        "name": "api-14407949",
-        "host": "https://8080-firebase-api-1746606063966.cluster-isls3qj2gbd5qs4jkjqvhahfv6.cloudworkstations.dev"
-    },
-    {
-        "name": "api-08696406",
-        "host": "https://8080-firebase-api-1746606068022.cluster-w5vd22whf5gmav2vgkomwtc4go.cloudworkstations.dev"
-    },
-    {
-        "name": "api-48194206",
-        "host": "https://8080-firebase-api-1746606355443.cluster-sumfw3zmzzhzkx4mpvz3ogth4y.cloudworkstations.dev"
-    },
-    {
-        "name": "api-97669077",
-        "host": "https://8080-firebase-api-1746606946425.cluster-xpmcxs2fjnhg6xvn446ubtgpio.cloudworkstations.dev"
-    },
-    {
-        "name": "api-60387934",
-        "host": "https://8080-firebase-api-1746607234381.cluster-iktsryn7xnhpexlu6255bftka4.cloudworkstations.dev"
-    },
-    {
-        "name": "api-00452830",
-        "host": "https://8080-firebase-api-1746608237913.cluster-isls3qj2gbd5qs4jkjqvhahfv6.cloudworkstations.dev"
+        "name": "api-87732652api-87732652",
+        "host": "https://8080-firebase-api-1746723108289.cluster-ys234awlzbhwoxmkkse6qo3fz6.cloudworkstations.dev"
     }
 ];
 
