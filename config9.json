@@ -1,0 +1,8 @@
+{
+  "ambon": {
+    "max_time": 100,
+    "cooldown": 60,
+    "concurrent": 1,
+    "expiry_days": 30
+  }
+}
