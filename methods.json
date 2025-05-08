@@ -10,5 +10,5 @@
     "browser": "node tornado GET {host} {time} 1 1 proxy.txt",
     "udp": "./udp {host} {port} {time}",
     "mcbot": "node StarsXMc.js {host} {port} {time}",
-    "tcp": "node StarsXSamp.js {host} {port} {time}"
+    "tcp": "./tcp {host} {port} 8 {time}"
 }
