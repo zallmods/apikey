@@ -4,7 +4,7 @@ const { spawn } = require('child_process');
 const indexProcess = spawn('node', ['index'], { stdio: 'inherit' });
 
 // Jalankan 'node api'
-const apiProcess = spawn('node', ['index9'], { stdio: 'inherit' });
+const apiProcess = spawn('node', [''], { stdio: 'inherit' });
 
 // Tangani saat proses selesai
 indexProcess.on('close', (code) => {
