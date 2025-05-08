@@ -31,7 +31,7 @@
   },
     "adonis": {
     "max_time": 300,
-    "cooldown": 200,
+    "cooldown": 60,
     "concurrent": 1,
     "expiry_days": 30
   },
